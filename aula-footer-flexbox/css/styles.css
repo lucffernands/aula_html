@@ -7,6 +7,11 @@
     font-family: 'poppins', sans-serif;
 }
 
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
 .generic-section {
     min-height: 300px;
     padding: 40px 20px;
@@ -24,11 +29,11 @@
     background-color: yellow;
 }
 
-h2 {
+.generic-section h2 {
     font-size: 32px;
 }
 
-p {
+.generic-section p {
     font-size: 24px;
 }
 
@@ -36,4 +41,19 @@ p {
    width: 100%;
     max-width: 960px;
     margin: 0% auto;
+}
+
+footer {
+    padding: 40px 20px;
+    min-height: 200px;
+    background-color: black;
+    color: white;   
+}
+
+.footer-links-container a {
+    display: block;
+}
+
+.footer-content {
+    display: flex;
 }
