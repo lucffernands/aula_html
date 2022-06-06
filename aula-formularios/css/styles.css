@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap");
 
+:root {
+  --main-color--: #ddd;
+  --secondary-color--: #fff;
+  --dark-orange--:#ff8400;
+  --light-orange--:#ffbb00;
+  --light-gray--:#f0f0f0;
+  --light-purple--:#aaf;
+  --shadow--: rgba(0, 0, 0, 0.25);
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +20,11 @@
 
 .generic-section {
     min-height: 300px;
-    padding: 40px 20px;
-    
+    padding: 40px 20px; 
 }
 
 .bg-gray {
-  background-color: #ddd;
+  background-color: var(--main-color--);
 }
 
 .generic-section h2 {
@@ -33,7 +43,7 @@
 }
 
 .form-card {
-  background-color: #fff;
+  background-color: var(--secondary-color--);
   padding: 20px;
   max-width: 600px;
   border-radius: 10px;
@@ -49,28 +59,80 @@
   height: 50px;
   margin-bottom: 20px;
   border: none;
-  background-color: #f0f0f0;
+  background-color: var(--light-gray--);
   border-radius: 5px;
   padding: 15px;
   font-size: 20px;
 }
 
 .form-card form input::placeholder {
-  color: #aaf;
+  color: var(--light-purple--);
 }
 .form-card form button {
   height: 50px;
   border: none;
   border-radius: 5px;
-  background-color: #ff8400;
+  background-color: var(--dark-orange--);
 }
 
 .form-card form button:hover {
-  background-color: #ffbb00;
+  background-color: var(--light-orange--);
 }
 
 .bg-blue {
-    font-size: 24px;
-    background-color: #ddd;
+    background-color: var(--main-color--);
+}
+
+.form-card-formulario {
+  font-size: 24px;
+  flex-direction: column;
+}
+
+.form-card-formulario input {
+  height: 40px;
+  width: 500px;
+  border: none;
+  background-color: var(--light-gray--);
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 20px;
+  
+}
+
+.container-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 
 }
+
+.container-names {
+  background-color: var(--secondary-color--);
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+
+.container-levels {
+  background-color: var(--secondary-color--);
+  padding: 50px;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+  margin-right: 20px;
+  min-width: 960px;
+}
+
+.container-escolaridade {
+  display: flex;
+ 
+}
+
+.container-lenguages {
+  display: flex;
+}
+
